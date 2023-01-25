@@ -1,0 +1,127 @@
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: var(--Very-Dark-Blue);
+  color: var(--White);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Overpass", sans-serif;
+}
+main {
+  background-color: var(--Dark-Blue);
+  width: 325px;
+  height: 265px;
+  padding: 40px;
+  border-radius: 15px;
+}
+main .section1 img {
+  background-color: hsl(216deg 12% 54% / 10%);
+  padding: 10px;
+  border-radius: 50%;
+}
+main .section1 h1 {
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+main .section1 p {
+  color: var(--Light-Grey);
+  font-size: 15px;
+  font-weight: 400;
+}
+main .section1 .rating {
+  display: flex;
+  justify-content: space-between;
+}
+main .section1 .rating a {
+  background-color: hsl(216deg 12% 54% / 10%);
+  padding: 14px;
+  width: 10px;
+  border-radius: 50%;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Light-Grey);
+  font-weight: 400;
+}
+main .section1 .rating a:hover {
+  background-color: var(--Medium-Grey);
+  color: var(--White);
+}
+main .section1 .btn {
+  background-color: var(--Orange);
+  color: var(--White);
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+}
+main .section1 .btn:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+}
+main .section2 {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .section2 img {
+  width: 120px;
+}
+main .section2 .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  color: var(--Orange);
+  background-color: hsl(216deg 12% 54% / 10%);
+  width: fit-content;
+  position: relative;
+  left: 80px;
+  height: 0px;
+  padding: 15px;
+  border-radius: 20px;
+  margin-top: 15px;
+  font-weight: 400;
+}
+main .section2 h1 {
+  font-weight: 700;
+}
+main .section2 p:last-child {
+  color: var(--Light-Grey);
+  font-size: 15px;
+  max-width: 307px;
+  position: relative;
+  left: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.attribution {
+  margin-top: 10px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--Orange);
+}
+@media (max-width: 375px) {
+  main {
+    width: 265px;
+  }
+}
